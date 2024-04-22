@@ -7,6 +7,7 @@
 /* seccion menu de navegacion*/
 nav {
     height: 10vh;
+    font-size: 2rem;
     background: linear-gradient(to bottom, #ff69b4cb, #808080ae, #ffffff);
 }
 
