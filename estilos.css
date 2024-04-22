@@ -39,7 +39,7 @@ a {
     margin: 0 auto;
     letter-spacing: .15em;
     animation: escribir 3s steps(30, end), glitter 3s ease infinite alternate;
-    font-size: 2rem;
+    font-size: 3rem;
     font-family: "Josefin Sans", sans-serif;
     color: transparent;
     background: linear-gradient(45deg, #ff69b4, #ff1493, #db7093, #ff69b4);
@@ -69,10 +69,11 @@ h2 {
 
 .tarjetas-proyectos {
     display: flex;
+    width:100%;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 1%;
-    padding: 1%;
+    margin: 3%;
+    padding: 3%;
 }
 
 /*seccion proyectos figma*/
