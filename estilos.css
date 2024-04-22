@@ -22,6 +22,7 @@ a{
     font-size: 1.5rem;
     font-family: "Josefin Sans", sans-serif;
     text-decoration: none;
+    color:black;
 }
 
 /*seccion texto maquina de escribir*/
@@ -207,7 +208,8 @@ body.modo-oscuro {
         height: 25vh;
     }
     a {
-        font-size: .5rem;
+        font-size: 1rem;
+        color:black;
     }
     .texto-maquina {
         font-size: .8rem;
