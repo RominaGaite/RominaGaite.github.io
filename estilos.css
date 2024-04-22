@@ -71,7 +71,7 @@ h2 {
 .tarjetas-proyectos {
     display: flex;
     width:100%;
-    flex-wrap: wrap;
+ flex-direction: row;
     justify-content: center;
     margin: 3%;
     padding: 3%;
@@ -186,7 +186,14 @@ body.modo-oscuro {
    }
    nav{
     height: 25vh;}
-   
+    .tarjetas-proyectos {
+        display: flex;
+        width:100%;
+     flex-direction: column;
+        justify-content: center;
+        margin: 3%;
+        padding: 3%;
+    }
 }
 
 
