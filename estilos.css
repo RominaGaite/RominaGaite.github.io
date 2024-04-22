@@ -1,18 +1,17 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 /* seccion menu de navegacion*/
 nav {
-    width: 100%;
     height: 10vh;
     background: linear-gradient(to bottom, #ff69b4cb, #808080ae, #ffffff);
 }
 
 ul {
-    width: 90%;
-    height: 10vh;
+    height: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -28,7 +27,7 @@ a {
 /*seccion texto maquina de escribir*/
 .contenedor-txtmaquina {
     text-align: center;
-    margin-top: 10%;
+    margin-top: 10vh;
 }
 
 .texto-maquina {
@@ -47,13 +46,10 @@ a {
     background-size: 400% 400%;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
-
 }
 
 @keyframes glitter {
-
-    0%,
-    100% {
+    0%, 100% {
         background-position: 0 0;
     }
 
@@ -61,71 +57,73 @@ a {
         background-position: 100% 100%;
     }
 }
+
 /*imagenes proyectos*/
-h2{
-    width: 100%;
+h2 {
     padding: 2%;
-    margin-top: 5%;
+    margin-top: 5vh;
     text-align: center;
     background-color: #ff69b4;
     color:rgb(81, 77, 70);
 }
-.tarjetas-proyectos{
-    width: 95%;
+
+.tarjetas-proyectos {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     margin: 1%;
     padding: 1%;
 }
+
 /*seccion proyectos figma*/
-.iframe-figma{
+.iframe-figma {
     border: 1px solid rgba(0, 0, 0, 0.1);
-    width:100%;
-    height:100vh;
+    width: 100%;
+    height: 90vh; 
 }
 
 /*seccion formulario*/
-.form{
-    width: 100%;
+.form {
     display: flex;
     justify-content: center;
     font-family: "Josefin Sans", sans-serif;
 }
-#formulario{
-    width: 50%;
+
+#formulario {
+    width: 90%;
+    max-width: 500px; /* Ancho máximo ajustable según necesidad */
     padding: 5%;
-    border-radius: 20%;
-    border: #ff1493 2px solid ;
+    border-radius: 20px;
+    border: #ff1493 2px solid;
     background: radial-gradient(circle at center, #ffffff, #808080c7, #ff69b4cb);
 }
-label{
+
+label {
     width: 100%;
     text-align: center;
 }
-input{
+
+input,
+textarea {
     width: 100%;
     padding: .5rem;
-    height: 7vh;
-    border-radius:20px;
-    border: #ff1493 2px solid ;
+    border-radius: 20px;
+    border: #ff1493 2px solid;
 }
-textarea{
-    width: 100%;
+
+textarea {
     height: 20vh;
-    padding: .5rem;
-    border-radius:20px;
-    border: #ff1493 2px solid ;
 }
+
 /*footer*/
-footer{
-    width: 100%;
+footer {
     height: 10vh;
-    margin-top: 5%;
+    margin-top: 5vh;
     font-size: 1rem;
     text-align: center;
     background: linear-gradient(to bottom, #ffffff, #808080ae, #ff69b4cb);
 }
+
 /*modo oscuro*/
 /* Agrega estilos para el modo oscuro */
 body.modo-oscuro {
@@ -159,10 +157,34 @@ body.modo-oscuro {
 .modo-oscuro-switch input[type="checkbox"]:checked + label::before {
     content: "🌙";
 }
-/* Agrega estilos para el modo oscuro */
-body.modo-oscuro {
-    background-color: #222;
-    color: #ddd;
+
+/* Media queries para hacer el diseño responsive */
+
+@media screen and (max-width: 768px) {
+    .contenedor-txtmaquina {
+        margin-top: 15vh;
+    }
+    
+    .tarjetas-proyectos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #formulario {
+        width: 70%;
+    }
+    h2, h3{
+        font-size: 1rem;
+    }
+   ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+   }
+   nav{
+    height: 25vh;}
+   
 }
 
 
