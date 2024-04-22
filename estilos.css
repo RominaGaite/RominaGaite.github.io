@@ -175,9 +175,9 @@ body.modo-oscuro {
         margin: 1%;
     }
     .tarjetas-proyectos {
-        display: flex;
+        display: flex; 
         width: 95%;
-        heigth:150vh;
+        height:150vh;
         flex-direction: column;
         justify-content: space-evenly;
         margin: 3%;
