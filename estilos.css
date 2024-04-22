@@ -95,8 +95,6 @@ h2 {
 
 #formulario {
     width: 90%;
-    max-width: 500px;
-    /* Ancho máximo ajustable según necesidad */
     padding: 5%;
     border-radius: 20px;
     border: #ff1493 2px solid;
@@ -205,6 +203,9 @@ body.modo-oscuro {
     }
     a {
         font-size: .5rem;
+    }
+    .texto-maquina {
+        font-size: .8rem;
     }
     
    
