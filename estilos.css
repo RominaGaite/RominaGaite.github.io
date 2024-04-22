@@ -71,14 +71,14 @@ h2 {
     color: rgb(81, 77, 70);
 }
 .card{
-    width:  100%;
+    width:  70%;
     height: 30vw;
     padding: 2%;
     margin: 1%;
 }
 .tarjetas-proyectos {
     display: flex;
-    width: 100%;
+    width: 95%;
     flex-direction: row;
     justify-content: center;
     margin: 3%;
