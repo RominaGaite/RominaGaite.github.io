@@ -19,12 +19,6 @@ ul {
     list-style: none;
 }
 
-a {
-    text-decoration: none;
-    color: black;
-    font-family: "Josefin Sans", sans-serif;
-    font-size: 1.5rem;
-}
 
 /*seccion texto maquina de escribir*/
 .contenedor-txtmaquina {
@@ -196,7 +190,7 @@ body.modo-oscuro {
 
     h2,
     h3 {
-        font-size: 1rem;
+        font-size: .5rem;
     }
 
     ul {
@@ -209,13 +203,9 @@ body.modo-oscuro {
     nav {
         height: 25vh;
     }
-
-    .tarjetas-proyectos {
-        display: flex;
-        width: 100%;
-        flex-direction: column;
-        justify-content: center;
-        margin: 3%;
-        padding: 3%;
+    a {
+        font-size: .5rem;
     }
+    
+   
 }
