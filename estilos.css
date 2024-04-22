@@ -176,11 +176,20 @@ body.modo-oscuro {
         margin-top: 15vh;
     }
 
-    .tarjetas-proyectos {
-        flex-direction: column;
-        align-items: center;
+    .card{
+        width:  90%;
+        height: 20vw;
+        padding: 5%;
+        margin: 1%;
     }
-
+    .tarjetas-proyectos {
+        display: flex;
+        width: 95%;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin: 3%;
+        padding: 3%;
+    }
     #formulario {
         width: 70%;
     }
