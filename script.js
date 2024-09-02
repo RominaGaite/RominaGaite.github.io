@@ -34,22 +34,21 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
   //para el formulario de contacto //
   document.getElementById('formulario').addEventListener('submit', function(event) {
-    event.preventDefault(); 
+    event.preventDefault();
 
-  
     var nombre = document.getElementById('nombre').value;
     var asunto = document.getElementById('asunto').value;
     var mail = document.getElementById('mail').value;
     var mensaje = document.getElementById('mensaje').value;
 
-
-    var cuerpoCorreo = "Nombre: " + nombre + "\n";
-    cuerpoCorreo += "Correo electrónico: " + mail + "\n";
-    cuerpoCorreo += "Mensaje:\n" + mensaje;
+    var cuerpoCorreo = "Nombre: " + nombre + "\n" +
+                       "Correo electrónico: " + mail + "\n" +
+                       "Mensaje:\n" + mensaje;
 
     var link = "mailto:gaiteromina@gmail.com" +
                "?subject=" + encodeURIComponent(asunto) +
                "&body=" + encodeURIComponent(cuerpoCorreo);
+
 
     window.location.href = link;
   });
